@@ -5,6 +5,7 @@ import Nav from "../components/Nav";
 import Card from "../components/Card";
 import imgbanner from "../images/homeBanner.png";
 import Gallery from "../components/Gallery";
+import Footer from "../components/Footer";
 
 function home() {
   return (
@@ -15,6 +16,7 @@ function home() {
       <Banner texte="Bienvenue sur notre site !" image={imgbanner} />
       <Card />
       <Gallery />
+      <Footer />
     </div>
   );
 }
