@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Card from "../components/Card";
 import imgbanner from "../images/homeBanner.png";
+import Gallery from "../components/Gallery";
 
 function home() {
   return (
@@ -13,6 +14,7 @@ function home() {
       <h1>Page d'accueil</h1>
       <Banner texte="Bienvenue sur notre site !" image={imgbanner} />
       <Card />
+      <Gallery />
     </div>
   );
 }
