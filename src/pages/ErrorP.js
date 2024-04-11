@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Error from "../components/ErrorC";
+import "../styles/ErrorP.css"; // Importez le fichier CSS contenant les styles
 
 const NoPage = () => {
   return (
