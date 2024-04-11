@@ -1,3 +1,25 @@
-body {
-  background-color: azure;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+p {
+  font-size: 96px;
+  font-weight: 700;
+  color: #ff6f61; /* Rouge saumon */
+  margin-bottom: 20px; /* Espacement en dessous */
+}
+
+div p {
+  font-size: 14px;
+  color: #ff6f61; /* Rouge saumon */
+  margin-bottom: 10px; /* Espacement en dessous */
+}
+
+a {
+  font-size: 12px;
+  color: #000; /* Noir */
 }
