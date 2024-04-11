@@ -1,0 +1,133 @@
+.Fiche-container {
+  color: #ff6060;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.Fiche-logement {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.description-info {
+  display: flex;
+  flex-direction: column;
+
+  .description-info__titletags {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+    .description-info__titletags__title {
+      display: flex;
+      flex-direction: column;
+
+      .titre-logement {
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .endroit-logement {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+
+    .description-info__titletags__tags {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .description-info__titletags {
+      flex-direction: column;
+      margin-bottom: 30px;
+
+      .description-info__titletags__title {
+        .titre-logement {
+          font-size: 36px;
+          font-weight: 500;
+          display: flex;
+          align-items: flex-end;
+        }
+
+        .endroit-logement {
+          font-size: 18px;
+          font-weight: 500;
+          display: flex;
+          align-items: flex-end;
+        }
+      }
+    }
+  }
+
+  .description-info__proprietaire {
+    display: flex;
+    flex-direction: row-reverse;
+
+    .description-info__proprietaire__nom-prop {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .nom-proprietaire {
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: 10px;
+        text-align: right;
+        width: 93px;
+      }
+
+      .photo-proprietaire {
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+      }
+    }
+
+    .description-info__proprietaire__rate {
+      align-self: flex-end;
+      margin-top: 20px;
+
+      .etoile {
+        width: 15px;
+        height: 15px;
+      }
+
+      @media screen and (min-width: 1024px) {
+        .etoile {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+.description-centent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .description-centent__description {
+      width: 50%;
+      padding-right: 40px;
+    }
+
+    .description-centent__equipement {
+      width: 50%;
+      padding-left: 40px;
+    }
+  }
+}
