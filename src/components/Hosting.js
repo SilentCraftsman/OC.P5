@@ -1,4 +1,5 @@
 import React from "react";
+//CSS empty
 
 function Host({ name, picture }) {
   return (

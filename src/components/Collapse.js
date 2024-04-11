@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/Collapse.css"; // Importez le fichier CSS contenant les styles
 
 const Collapse = ({ title, content }) => {
   //declaration du state en utilisant le Hook useState()

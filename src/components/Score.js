@@ -1,6 +1,7 @@
 import React from "react";
 import emptyStar from "../images/Stars/startRempli.png";
 import fullStar from "../images/Stars/startVide.png";
+//CSS empty
 
 function Rate({ score }) {
   const notes = [1, 2, 3, 4, 5];
