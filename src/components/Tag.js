@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Tag.css"; // Importez le fichier CSS contenant les styles
 
 function Tag({ nom }) {
   return (
