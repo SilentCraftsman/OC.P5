@@ -1,11 +1,19 @@
-/*CSS ayant pour but de m'aider à assembler le design du site*/
-/*Temporaire*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 .banner {
   border-radius: 10px;
   height: 111px;
+  margin-right: 50px;
+  margin-left: 50px;
   margin-bottom: 35px;
   position: relative;
+}
+
+@media screen and (min-width: 375px) {
+  .banner {
+    border-radius: 25px;
+    height: 223px;
+  }
 }
 
 .banner__img {
@@ -16,13 +24,12 @@
 }
 
 .banner__dark {
-  color: aqua;
-  font-size: 24px;
+  background-color: black;
   width: 100%;
   height: 100%;
   border-radius: 25px;
   left: 0;
-  opacity: 0.3;
+  opacity: 0.5;
   position: absolute;
   top: 0;
 }
@@ -35,8 +42,29 @@
   bottom: 80.05%;
   font-style: Medium;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
+  font-family: Montserrat;
   line-height: 100%;
+  color: white;
   width: 217px;
   height: 48px;
+}
+
+@media screen and (min-width: 375px) {
+  .banner__text {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 48px;
+    font-style: normal;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 142.6%;
+  }
 }
