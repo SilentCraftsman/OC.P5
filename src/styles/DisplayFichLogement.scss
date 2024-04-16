@@ -1,67 +1,53 @@
+@import "../styles/Saas_tools/variables_mixins.scss";
+
 .Fiche-container {
-  color: #ff6060;
+  color: $primary-color;
   flex-direction: column;
   margin-bottom: 20px;
 }
-
 .Fiche-logement {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-
 .description-info {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
+  &__titletags {
+    @include flex-column;
 
-  .description-info__titletags {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-
-    .description-info__titletags__title {
-      display: flex;
-      flex-direction: column;
-      margin: 15px;
-
+    &__title {
+      @include flex-column;
+      margin-bottom: 15px;
       .titre-logement {
-        font-size: 18px;
-        font-weight: 500;
+        @include font(18px, 500);
       }
-
       .endroit-logement {
-        font-size: 14px;
-        font-weight: 500;
+        @include font(14px, 500);
       }
     }
-
-    .description-info__titletags__tags {
-      margin: 10px;
+    &__tags {
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
     }
   }
-
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $breakpoint-desktop) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    .description-info__titletags {
-      flex-direction: column;
+    &__titletags {
+      @include flex-column;
       margin-bottom: 30px;
+      &__title {
+        @include flex-column;
 
-      .description-info__titletags__title {
         .titre-logement {
-          font-size: 36px;
-          font-weight: 500;
+          @include font(36px, 500);
           display: flex;
           align-items: flex-end;
         }
-
         .endroit-logement {
-          font-size: 18px;
-          font-weight: 500;
+          @include font(18px, 500);
           display: flex;
           align-items: flex-end;
         }
@@ -69,24 +55,28 @@
     }
   }
 
-  .description-info__proprietaire {
+  &__proprietaire {
     display: flex;
     flex-direction: row-reverse;
-
-    .description-info__proprietaire__nom-prop {
+    justify-content: space-between;
+    @media screen and (min-width: $breakpoint-desktop) {
       display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-content: flex-end;
-      margin: 20px;
+    }
+    &__nom-prop {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
 
       .nom-proprietaire {
-        font-size: 18px;
-        font-weight: 500;
+        @include font(18px, 500);
         margin-right: 10px;
         text-align: right;
         width: 93px;
       }
-
       .photo-proprietaire {
         border-radius: 50%;
         width: 64px;
@@ -94,18 +84,14 @@
         object-fit: cover;
       }
     }
-
-    .description-info__proprietaire__rate {
-      align-self: flex-end;
+    &__rate {
+      @include flex-end;
       margin-top: 20px;
-
       .etoile {
         width: 15px;
         height: 15px;
-      }
 
-      @media screen and (min-width: 1024px) {
-        .etoile {
+        @media screen and (min-width: $breakpoint-desktop) {
           width: 30px;
           height: 30px;
         }
@@ -113,22 +99,19 @@
     }
   }
 }
-
 .description-centent {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $breakpoint-desktop) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    .description-centent__description {
+    &__description {
       width: 50%;
       padding-right: 40px;
     }
-
-    .description-centent__equipement {
+    &__equipement {
       width: 50%;
       padding-left: 40px;
     }

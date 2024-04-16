@@ -6,7 +6,7 @@ import Collapse from "./Collapse";
 import Carrousel from "./Caroussel";
 import Score from "./Score";
 import Hosting from "./Hosting";
-import "../styles/DisplayFichLogement.css"; // Importez le fichier CSS contenant les styles
+import "../styles/DisplayFichLogement.scss"; // Importez le fichier CSS contenant les styles
 
 const FicheLogementDisplay = () => {
   const { id } = useParams();
