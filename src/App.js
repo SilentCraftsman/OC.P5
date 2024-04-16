@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles/Fundamental/fundamental.scss";
 import { Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import Home from "./pages/home";
 import FichLogement from "./pages/fichelogement";
