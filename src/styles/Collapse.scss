@@ -1,62 +1,58 @@
 @import "../styles/Saas_tools/variables_mixins.scss";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 
-.collapse {
-  display: flex;
+// Collapse.scss
+
+.collapse__dropdown__container {
   width: 100%;
   margin: 20px 0;
-  justify-content: center;
-  align-items: center;
-  background-color: #ff6060;
-  color: white;
-  &__dropdown {
-    width: 100%;
+}
 
-    @media screen and (min-width: $breakpoint-desktop) {
-      width: 80%;
+.collapse__dropdown__title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  background-color: $primary-color;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  h2 {
+    color: $tertiary-color;
+    font-size: 24px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  p {
+    cursor: pointer;
+    i {
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
+      color: #ffffff;
+      transform: rotate(180deg);
     }
+  }
 
-    &__header {
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      padding: 0.5em 1em;
-      width: 100%;
-      background-color: $primary-color;
-      margin: 0 auto;
-      margin-top: 1.5em;
-      border-radius: 5px;
-
-      @media screen and (min-width: $breakpoint-desktop) {
-        width: 100%;
-      }
-
-      h2 {
-        color: $tertiary-color;
-        @include font(24px, 500);
-      }
-      p {
-        color: $tertiary-color;
-        i {
-          cursor: pointer;
-        }
-      }
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    h2 {
+      color: lighten($tertiary-color, 10%);
     }
-    &__content {
-      background-color: $secondary-color;
-      width: 100%;
+  }
+}
 
-      border-radius: 5px;
+.collapse__dropdown__content {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding-top: 0.5em;
+  transition: max-height 0.3s ease;
 
-      @media screen and (min-width: $breakpoint-desktop) {
-        width: 100%;
-      }
-
-      p {
-        @include font(20px, 400);
-        color: $primary-color;
-        margin: 0 auto;
-        padding: 0.8em;
-      }
-    }
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    color: $primary-color;
   }
 }
