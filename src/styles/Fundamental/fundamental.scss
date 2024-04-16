@@ -1,41 +1,29 @@
-/** Styles **/
-// Importation de la police de caractères depuis Google Fonts
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import "../Saas_tools/variables_mixins.scss";
 
-// Réinitialisation des styles par défaut
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-// Styles généraux pour le corps de la page
 body {
-  // Utilisation de la police de caractères par défaut pour le corps de la page
-  font-family: "Montserrat", sans-serif;
-
-  // Positionnement et dimensions du corps de la page
   @include body-position;
 
-  // Ajustement de la largeur maximale pour les écrans de bureau
   @media (min-width: $breakpoint-desktop) {
     max-width: 100%;
   }
 }
 
-// Styles pour la zone principale de contenu
 main {
-  // Marge autour de la zone principale de contenu
   margin: 5%;
 
-  // Ajustement de la marge pour les écrans de bureau
   @media screen and (min-width: $breakpoint-desktop) {
     margin: 0 100px;
   }
 }
 
-// Styles pour les listes
 li {
-  // Suppression du style de liste par défaut
   list-style-type: none;
 }
