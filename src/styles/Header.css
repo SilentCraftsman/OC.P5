@@ -1,8 +1,0 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 50px;
-}

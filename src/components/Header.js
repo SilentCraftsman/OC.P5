@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../images/Logo/LOGO.svg";
-import "../styles/Header.css"; // Importez le fichier CSS contenant les styles
+import "../styles/Header.scss"; // Importez le fichier CSS contenant les styles
 import Nav from "./Nav";
 
 function Header() {
