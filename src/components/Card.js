@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Card.css"; // Importez le fichier CSS contenant les styles
+import "../styles/Card.scss"; // Importez le fichier CSS contenant les styles
 
 function Card({ image, title }) {
   return (
