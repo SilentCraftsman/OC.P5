@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logements from "../data.json";
 import Card from "../components/Card";
-import "../styles/Gallery.css"; // Importez le fichier CSS contenant les styles
+import "../styles/Gallery.scss"; // Importez le fichier CSS contenant les styles
 
 const Gallery = () => {
   return (
