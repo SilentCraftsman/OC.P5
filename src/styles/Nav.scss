@@ -11,8 +11,9 @@
   &__nav-link-home,
   &__nav-link-about {
     @include font-right(12px);
-    color: $primary-color;
+    color: #000000;
     text-decoration: none;
+    //text-decoration-line: underline;
     padding-left: 0.8rem;
 
     @media screen and (min-width: $breakpoint-desktop) {
@@ -20,7 +21,10 @@
       padding-left: 3.5rem;
     }
 
-    &:hover,
+    &:visited {
+      text-decoration-line: underline;
+    }
+
     &:focus {
       text-decoration-line: underline;
     }
